@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosso Espaço | Academia Eva Ativa</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <header>
+        <img src="./imgs/icon.png" alt="logo" class="logo">
+        <h1>Academia Eva Ativa</h1>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./horarios.html">Horários</a></li>
+                <li><a href="./espasso.html">Nosso Espaço</a></li>
+                <li><a href="./contato.html">Contato</a></li>
+                <li><a href="./mensalidade.html">Mensalidades</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<section class="space-section">
+    <h2>Nosso Espaço</h2>
+
+    <div class="photo-gallery">
+        <div class="gallery-item" onclick="openZoomModal('./imgs/aparelhos.jpeg')">
+            <img src="./imgs/aparelhos.jpeg" alt="Aparelho 1" class="img-zoom">
+            <p>Ambiente moderno com equipamentos de última geração.</p>
+        </div>
+
+        <div class="gallery-item" onclick="openZoomModal('./imgs/fundo-prov.webp')">
+            <img src="./imgs/fundo-prov.webp" alt="Banheiro" class="img-zoom">
+            <p>Banheiros limpos e bem equipados para sua conveniência.</p>
+        </div>
+
+        <div class="gallery-item" onclick="openZoomModal('./imgs/recepcao1.jpeg')">
+            <img src="./imgs/recepcao1.jpeg" alt="Recepção" class="img-zoom">
+            <p>Nossa recepção calorosa e acolhedora.</p>
+        </div>
+        
+        <div class="gallery-item" onclick="openZoomModal('./imgs/climatizadores.jpeg')">
+            <img src="./imgs/climatizadores.jpeg" alt="Climarizador" class="img-zoom">
+            <p>Temos Climatizadores para sua melhor experiência.</p>
+        </div>
+
+        <div class="gallery-item" onclick="openZoomModal('./imgs/piso.jpeg')" class="img-zoom">
+            <img src="./imgs/piso.jpeg" alt="Chão">
+            <p>Nosso chão emborrachado para melhor execução de exercícios</p>
+        </div>
+        <!-- Adicione mais galerias conforme necessário -->
+
+    </div>
+
+    <!-- Modal para exibir imagem ampliada -->
+    <div id="zoomModal" class="modal" onclick="closeZoomModal()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="zoomImage">
+    </div>
+</section>
+
+<footer class="espasso-footer">
+    <p>&copy; 2024 Academia Eva Ativa. Todos os direitos reservados.</p>
+</footer>
+
+<script src="./script.js"></script>
+</body>
+</html>
