@@ -282,7 +282,7 @@ ion-icon {
     font-size: 2em; /* Tamanho dos ícones */
     color: white; /* Cor dos ícones (ajuste conforme necessário) */
     margin: 0;
-
+    transition: 1s;
 }
 
 
@@ -539,6 +539,14 @@ footer {
     cursor: pointer;
 }
 
+.MapBox {
+    margin-top: 1%;
+}
+
+.MapBox iframe {
+    border-radius: 6px;
+}
+
 
 @media screen and (max-width: 481px) {
     nav {
@@ -591,6 +599,11 @@ footer {
 
     .container{
         margin: 25px;
+    }
+
+    iframe {
+        height: 300px;
+        width: 300px;
     }
 }
 
